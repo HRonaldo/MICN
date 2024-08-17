@@ -46,7 +46,7 @@ class MICN(nn.Module):
                  d_model=256, n_heads=8,d_layers=3,
                  dropout=0.2,embed='fixed', freq='h',
                  device=torch.device('cuda:0'), mode='regre',
-                 decomp_kernel=[33], conv_kernel=[12, 24], isometric_kernel=[18, 6],patch_len=16,stride=8,padding_patch='end'
+                 decomp_kernel=[33], conv_kernel=[12, 24], isometric_kernel=[18, 6],patch_len=4,stride=2,padding_patch='end'
                  ,pe = 'zeros',learn_pe=True,individual=False,revin=True,affine=True,subtract_lasy=True,head_dropout=0):
         super(MICN, self).__init__()
 
